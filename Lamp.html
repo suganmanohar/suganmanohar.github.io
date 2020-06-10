@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="lamp.css">
+    <title> Sugan Manohar</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Permanent Marker" rel="stylesheet">
+
+<center>
+    <br>
+    <br>
+
+    <body>
+        <h1 class="header__name"> Kalaideo</h1>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="Designs.html">Projects</a>
+            <a href="About.html">About Me</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+        <br>
+        <br>
+    </body>
+</center>
+
+<center>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Images -->
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=1irTyoVjQDj7Um-asZG-u7P1qEfdAnUSG" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=1ei-ZJ2D0ev6yx5okMAnl2vxWpMBV4_W9" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=1vNZpqX3t5SbVfTCoESeyTCynY2LI7xgA" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=1oM4WQQ57Sbl0MxGMC9c0W1hU0Gqs4Bfl" style="width:100%">
+
+        </div>
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=1IZUKyEeZ8louq0g4ZjnejGHSfU0MyX-j" style="width:100%">
+
+        </div>
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=1GOpxFf4eyDdgS8OMLLb32OqPvYOjEKog" style="width:100%">
+
+        </div>
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=15LyTX6US8aZgFg-RwwL3qlhxAjs3k0_O" style="width:100%">
+
+        </div>
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=15LH7_zZczAjM70L8kU2AY4k0plbFBNk0" style="width:100%">
+
+        </div>
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=15rvtQ-7AN6nmyh86XGoaBDcEBQUSSSNr" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=1bjrXefjzwYz5XaESwhOyOVtmKflnhjcP" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=1q4xhZP3W5esx4XTfWRk_TVH6pesbpfPy" style="width:100%">
+
+        </div>
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=1MycPQdx6yyWO6wN2i89YzFUwBS6X9Zvc" style="width:100%">
+
+        </div>
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=1-HmxDirOpjLY1m6ZIL0w3nSmPo38PHMr" style="width:100%">
+
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+    </div>
+    </body>
+</center>
+
+</html>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>

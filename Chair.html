@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="chair.css">
+    <title> Sugan Manohar</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Permanent Marker" rel="stylesheet">
+
+<center>
+    <br>
+    <br>
+
+    <body>
+        <h1 class="header__name"> Toska</h1>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="Designs.html">Projects</a>
+            <a href="About.html">About Me</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+        <br>
+        <br>
+    </body>
+</center>
+
+<center>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Images -->
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=1KQbEQXcmORqhfp8eWeQr3Oj8GRkGg9vG" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=161SySH_iDpei1cqk1yCOrPldGbWVnJTD" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=1Yu6cb5GFP8sD8hZnJzBqqpMHszaCUiEt" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=1ExGLsE3D3xJ9R2JSKJ0u65phUi8RqncJ" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=d/1mXjT6AbkB_zPvrPiafNBTiSGPRCCpDSL" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=1y8R14Gj-6DcvtAeROv-9YTRRUDPjmJgf" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=1MUp0zTSvBcwXmw7S6kLTcBsY_DDXAsjT" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=1xFpU1blFN0IVCMAcj4WIzkLE0XKv1FO8" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=1nV7v2SNiI-0yxm1saAFFPQ8H2yF7gwOq" style="width:100%">
+
+        </div>
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=1ZhG6N-HCqzj7q8ehjSP5s0Y2ktrih4dI" style="width:100%">
+
+        </div>
+        <div class="mySlides fade">
+
+            <img src="https://drive.google.com/uc?id=1Vti2sKn4rL1ai6ExFtYQbSXPdH2o3SiJ" style="width:100%">
+
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+    </div>
+    </body>
+</center>
+
+</html>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
